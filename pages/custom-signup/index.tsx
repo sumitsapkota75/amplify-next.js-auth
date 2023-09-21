@@ -1,4 +1,4 @@
-import { Button, Input } from "@aws-amplify/ui-react";
+import { Button, Input, Link } from "@aws-amplify/ui-react";
 import { notification } from "antd";
 import { Auth } from "aws-amplify";
 import { useRouter } from "next/router";
@@ -84,6 +84,7 @@ const Login = () => {
         />
         <Button type="submit">Create Account</Button>
       </form>
+      <Link href={"/custom-login"}>Go to Login page</Link>
     </Container>
   );
 };

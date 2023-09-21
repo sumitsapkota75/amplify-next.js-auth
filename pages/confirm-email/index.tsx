@@ -44,6 +44,7 @@ const Login = () => {
       notification.success({
         message: `User verified successfully, now you can login`,
       });
+      router.push("/custom-login")
     } catch (error) {
       notification.error({
         message: `Failed to verify user ${error}`,
