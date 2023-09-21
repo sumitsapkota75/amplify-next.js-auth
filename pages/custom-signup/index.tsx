@@ -80,7 +80,7 @@ const Login = () => {
           placeholder="Enter Phone number"
           required={true}
           type="text"
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setPhone(e.target.value)}
         />
         <Button type="submit">Create Account</Button>
       </form>

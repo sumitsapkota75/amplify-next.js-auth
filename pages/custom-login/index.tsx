@@ -42,11 +42,13 @@ const Login = () => {
     }
   };
   useEffect(() => {
-    const fetchUsers = async () => {
-      const {attributes} = await Auth.currentUserInfo();
-      setUser(attributes)
-    };
-    fetchUsers();
+    if(isLoggedIn){
+      const fetchUsers = async () => {
+        const {attributes} = await Auth.currentUserInfo();
+        setUser(attributes)
+      };
+      fetchUsers();
+    }
   }, [isLoggedIn]);
 
   if (isLoggedIn) {
